@@ -47,17 +47,6 @@ MainWindow::MainWindow(QWidget *parent)
     // enable wordwrap mode
     input_instruction->setWordWrap(true);
 
-    // make the side note
-    side_note = new QLabel(
-            "CS3305A 2021\t\t\t\t2021-10-09\nYonatan Alexander\t\tIndividual Assignment\n"
-            "Extension was granted and approved, as per policy. If you have any questions, please contact the instructor."
-            "\nThank you",
-            this);
-    // set size and location
-    side_note->setGeometry(QRect(QPoint(675, 630), QSize(450, 150)));
-    // enable wordwrap mode
-    side_note->setWordWrap(true);
-
     // make the status_label
     status_label = new QLabel("Exit Status: 0", this);
     // set size and location
